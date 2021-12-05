@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecity.alice.project.ecity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/BarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/conteiner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/BarLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+
+        />
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_infra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="8dp"
+        app:layout_anchorGravity="left"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:menu_animationDelayPerItem="50"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="#DA4336"
+        app:menu_colorPressed="#E75043"
+        app:menu_colorRipple="#99FFFFFF"
+        app:menu_fab_hide_animation="@anim/fab_scale_down"
+        app:menu_fab_show_animation="@anim/show_from_bottom"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/ic_location_city_black_24dp"
+        app:menu_labels_colorNormal="#333333"
+        app:menu_labels_colorPressed="#444444"
+        app:menu_labels_colorRipple="#66FFFFFF"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_hideAnimation="@anim/saltar_para_baixo"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_paddingBottom="4dp"
+        app:menu_labels_paddingLeft="8dp"
+        app:menu_labels_paddingRight="8dp"
+        app:menu_labels_paddingTop="4dp"
+        app:menu_labels_position="right"
+        app:menu_labels_showAnimation="@anim/saltar_de_baixo"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="true"
+        app:menu_labels_textColor="#FFFFFF"
+        app:menu_labels_textSize="14sp"
+        app:menu_openDirection="up"
+        app:menu_shadowColor="#66000000"
+        app:menu_shadowRadius="4dp"
+
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="3dp"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_ele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_flash_on_black_24dp"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#FFCA28"
+            app:fab_colorPressed="#FFECB3"
+            app:fab_label="@string/label_eletricidade"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_agua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/agua_24"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#4FC3F7"
+            app:fab_colorPressed="#E1F5FE"
+            app:fab_label="@string/label_agua"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_lixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/residuos_24"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#8D6E63"
+            app:fab_colorPressed="#D7CCC8"
+            app:fab_label="@string/label_lixo"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_mob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/estrada_24"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#E0E0E0"
+            app:fab_colorPressed="#F5F5F5"
+            app:fab_label="@string/label_mobilidade"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_geral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_domain_black_24dp"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#EC407A"
+            app:fab_colorPressed="#F8BBD0"
+            app:fab_label="@string/label_infra_geral"
+            app:fab_size="mini"
+
+
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_bem_estar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="120dp"
+        app:layout_anchorGravity="left"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:menu_animationDelayPerItem="50"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="#4A148C"
+        app:menu_colorPressed="#CE93D8"
+        app:menu_colorRipple="#99FFFFFF"
+        app:menu_fab_hide_animation="@anim/fab_scale_down"
+        app:menu_fab_show_animation="@anim/show_from_bottom"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/heart"
+        app:menu_labels_colorNormal="#333333"
+        app:menu_labels_colorPressed="#444444"
+        app:menu_labels_colorRipple="#66FFFFFF"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_hideAnimation="@anim/saltar_para_baixo"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_paddingBottom="4dp"
+        app:menu_labels_paddingLeft="8dp"
+        app:menu_labels_paddingRight="8dp"
+        app:menu_labels_paddingTop="4dp"
+        app:menu_labels_position="left"
+        app:menu_labels_showAnimation="@anim/saltar_de_baixo"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="true"
+        app:menu_labels_textColor="#FFFFFF"
+        app:menu_labels_textSize="14sp"
+        app:menu_openDirection="up"
+        app:menu_shadowColor="#66000000"
+        app:menu_shadowRadius="4dp"
+
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="3dp"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_saude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hospital"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#D50000"
+            app:fab_colorPressed="#EF9A9A"
+            app:fab_label="@string/label_saude"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_educ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/formatura_24"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#1A237E"
+            app:fab_colorPressed="#9FA8DA"
+            app:fab_label="@string/label_educacao"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_seguranca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/policia_24"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#D84315"
+            app:fab_colorPressed="#FFAB91"
+            app:fab_label="@string/label_seguranca"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_lazer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/balanco_24"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#212121"
+            app:fab_colorPressed="#E0E0E0"
+            app:fab_label="@string/label_lazer"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_meio_ambiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/folha_24"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_colorNormal="#2E7D32"
+            app:fab_colorPressed="#A5D6A7"
+            app:fab_label="@string/label_ambiente"
+            app:fab_size="mini"
+
+
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/marcadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="8dp"
+        app:layout_anchorGravity="left"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:menu_animationDelayPerItem="50"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="#DA4336"
+        app:menu_colorPressed="#E75043"
+        app:menu_colorRipple="#99FFFFFF"
+        app:menu_fab_hide_animation="@anim/fab_scale_down"
+        app:menu_fab_show_animation="@anim/show_from_bottom"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/ic_room_black_24dp"
+        app:menu_labels_colorNormal="#333333"
+        app:menu_labels_colorPressed="#444444"
+        app:menu_labels_colorRipple="#66FFFFFF"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_hideAnimation="@anim/saltar_para_baixo"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_paddingBottom="4dp"
+        app:menu_labels_paddingLeft="8dp"
+        app:menu_labels_paddingRight="8dp"
+        app:menu_labels_paddingTop="4dp"
+        app:menu_labels_position="left"
+        app:menu_labels_showAnimation="@anim/saltar_de_baixo"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="true"
+        app:menu_labels_textColor="#FFFFFF"
+        app:menu_labels_textSize="14sp"
+        app:menu_openDirection="up"
+        app:menu_shadowColor="#66000000"
+        app:menu_shadowRadius="4dp"
+
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="3dp"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/mark1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_room_black_24dp"
+            android:visibility="gone"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_label="@string/label_nada"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/mark2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_room_black_24dp"
+            android:visibility="gone"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_label="@string/label_educacao"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/mark3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_room_black_24dp"
+            android:visibility="gone"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_label="@string/label_nada"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/mark4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_room_black_24dp"
+            android:visibility="gone"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_label="@string/label_nada"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/mark5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_room_black_24dp"
+            android:visibility="gone"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_label="@string/label_nada"
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/mark6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_room_black_24dp"
+            android:visibility="gone"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_label="@string/label_nada"
+
+            app:fab_size="mini"
+
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/mark7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_room_black_24dp"
+            android:visibility="gone"
+            app:fab_colorDisabled="@color/colorPrimary"
+            app:fab_label="@string/label_nada"
+
+            app:fab_size="mini"
+
+
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

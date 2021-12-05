@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#4FC3F7"
+    tools:context="com.ecity.alice.project.ecity.LoginECITY">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#4FC3F7"
+        android:visibility="gone" />
+
+
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#4FC3F7">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bem_vindo"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco"
+                    android:textSize="16dp"
+                    android:layout_marginTop="32dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ecityLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/ecity_string"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco"
+                    android:textSize="42dp"
+                    android:textStyle="bold"/>
+
+                <com.shobhitpuri.custombuttons.GoogleSignInButton
+                    android:id="@+id/btnGSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:isDarkTheme="true"
+                    android:text="@string/entrar_google"
+
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/background0"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:layout_margin="16dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

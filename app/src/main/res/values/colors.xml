@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="branco">#ffffff</color>
+    <color name="elePressed">#FFF59D</color>
+    <color name="aguPressed">#E1F5FE</color>
+    <color name="lixPressed">#D7CCC8</color>
+    <color name="mobPressed">#F5F5F5</color>
+    <color name="gerPressed">#F8BBD0</color>
+    <color name="sauPressed">#FFEBEE</color>
+    <color name="eduPressed">#E3F2FD</color>
+    <color name="segPressed">#FFE0B2</color>
+    <color name="lazPressed">#F5F5F5</color>
+    <color name="ambPressed">#C5E1A5</color>
+    <color name="lightOrange">#FBE9E7</color>
+    <color name="darkOrange">#DD2C00</color>
+    <color name="darkLightOrange">#FF5722</color>
+    <color name="lightBlue">#E1F5FE</color>
+    <color name="darkBlue">#01579B</color>
+    <color name="darkLightBlue">#0288d1</color>
+    <color name="greenLight">#E0F2F1</color>
+    <color name="VermelhoIcon">#B31215</color>
+
+
+
+
+</resources>
